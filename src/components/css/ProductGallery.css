@@ -1,0 +1,44 @@
+.productGallery h3{
+    text-align: center;
+}
+.productGallery{
+    padding: 2rem;
+}
+
+.products img{
+    height: 13rem;
+    width: 13rem;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: auto;
+    gap: 2rem;
+}
+.card{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none !important;
+}
+.card-img{
+    margin-bottom: 1rem;
+}
+.card-text{
+    margin-bottom: 0rem !important;
+}
+
+.price_bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center !important;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.card-title{
+    font-size: medium!important;
+}

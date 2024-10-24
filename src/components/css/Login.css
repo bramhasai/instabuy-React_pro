@@ -1,0 +1,67 @@
+.login_page{
+    background-color: #216ad9;
+}
+.signup_page{
+    background-color: #216ad9; 
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 0rem !important;
+    margin-right: 0rem !important;
+    height: 88vh;
+}
+
+.login_details{
+    padding-left: 4rem;
+    width: 85%;
+}
+
+.login_details h5{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.login_details h1{
+    margin: 2rem 0rem 1rem 0rem;
+    color: white;
+}
+
+.login_details h6{
+    width: 50%;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.login_form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.mb-3{
+    width: 48% !important;
+}
+
+.start_shopping{
+    background-color: #216ad9 !important;
+    color: white;
+    border-radius: 0 !important;
+    border-width: 0.2rem !important;
+    border-color: white !important;
+    width: 100%;
+    font-weight: 600 !important;
+    margin: 1rem 0rem;
+}
+
+.join_us_link p{
+    color: white;
+    text-align: center;
+}
+.join_us_link a{
+    color: white;
+}

@@ -1,0 +1,77 @@
+.signup_page{
+    background-color: #216ad9; 
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 0rem !important;
+    margin-right: 0rem !important;
+    height: 88vh;
+}
+
+.signup_details{
+    padding-left: 4rem;
+    width: 85%;
+}
+
+.signup_details h5{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.signup_details h1{
+    margin: 1rem 0rem 1rem 0rem;
+    color: white;
+}
+
+.signup_details h6{
+    width: 50%;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.signup_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.secA{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+
+.secA .mb-3{
+    width: 48% !important;
+}
+.secB{
+    width: 100%;
+}
+.secB .mb-3{
+    width: 100% !important;
+}
+.join_shopping{
+    background-color: #216ad9 !important;
+    color: white;
+    border-radius: 0 !important;
+    border-width: 0.2rem !important;
+    border-color: white !important;
+    width: 100%;
+    font-weight: 600 !important;
+    margin: 0.5rem 0rem 1rem;
+}
+
+.already_mem_link p{
+    color: white;
+    text-align: center;
+}
+.already_mem_link a{
+    color: white;
+}

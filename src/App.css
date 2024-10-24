@@ -1,0 +1,31 @@
+.navbar.instabuy-navbar{
+    border-bottom: 1px solid grey;
+    padding: 5px 20px;
+    height: 12vh;
+}
+
+.home-page-main{
+    height: 88vh;
+}
+
+.branding{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.branding img{
+    height: 3rem;
+    width: 3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
