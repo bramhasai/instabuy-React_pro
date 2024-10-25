@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from 'react-bootstrap/Navbar';
 import { Badge, Button } from 'react-bootstrap';
 import { useNavigate, Route,Routes } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 
 import Logo from './assets/logo.png'
 import cart_logo from './assets/cart_logo.png'
@@ -10,7 +11,6 @@ import cart_logo from './assets/cart_logo.png'
 import Home from './components/Home';
 import Login from './components/Login';
 import Signup from './components/Signup';
-import { useEffect, useState } from 'react';
 import ProductGallery from './components/ProductGallery';
 import ProductDetails from './components/ProductDetails';
 import Cart from './components/Cart';
