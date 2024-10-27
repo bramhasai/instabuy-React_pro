@@ -2,7 +2,7 @@ import './App.css';
 
 import Navbar from 'react-bootstrap/Navbar';
 import { Badge, Button } from 'react-bootstrap';
-import { useNavigate, Route,Routes } from 'react-router-dom';
+import { useNavigate, Route,Routes, useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 
 import Logo from './assets/logo.png'
@@ -18,6 +18,7 @@ import Checkout from './components/Checkout';
 
 function App() {
   const navigate=useNavigate();
+  const location=useLocation();
   const [user,setUser]=useState("");
   const [cartItems,setCartItems]=useState({});
   
@@ -41,7 +42,7 @@ function App() {
   const handleClearCart=()=>{
     setCartItems({});
   }
-
+  const isAuthPage = location.pathname === '/login' || location.pathname === '/signup';
   return (
     <div>
       <Navbar className="instabuy-navbar">
@@ -55,15 +56,17 @@ function App() {
             {Object.keys(cartItems).length>0 && <Badge style={{borderRadius:"50%", marginRight:"1rem"}} bg='success'>{Object.keys(cartItems).length}</Badge>}
           </Button>}
           
-          <Button onClick={()=>{
-            if(user){
-              handleLogout();
-            }else{
-              navigate('/login'); 
-            }
-          }}>
-            {user? 'Logout' :"Login"}
-          </Button>
+          {!isAuthPage && (
+            <Button onClick={() => {
+              if (user) {
+                handleLogout();
+              } else {
+                navigate('/login'); 
+              }
+            }}>
+              {user ? 'Logout' : "Login"}
+            </Button>
+          )}
         </Navbar.Collapse>
       </Navbar>
       <Routes>

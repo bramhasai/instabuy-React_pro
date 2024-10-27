@@ -75,3 +75,12 @@
 .already_mem_link a{
     color: white;
 }
+
+.links{
+    text-decoration: none;
+}
+.links:hover{
+    cursor:pointer;
+    text-decoration: underline;
+    color: black;
+}

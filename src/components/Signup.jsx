@@ -47,7 +47,7 @@ export default function Signup({setUser}){
                     </Form>
 
                     <div className="already_mem_link">
-                        <p>Already a member?<a onClick={()=>navigate('/login')}>click here</a></p>
+                        <p>Already a member? <a className="links" onClick={()=>navigate('/login')}>Click here</a></p>
                     </div>
                     </div>
                 </Col>

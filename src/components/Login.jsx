@@ -38,7 +38,7 @@ function Login({setUser}){
                         </Button>
                     </Form>
                     <div className="join_us_link">
-                        <p>Join the club <a onClick={()=>navigate('/signup')}>Click here</a></p>                
+                        <p>Join the club! <a className="links" onClick={()=>navigate('/signup')}>Click here</a></p>                
                     </div>
                 </div>    
                 </Col>
